@@ -1,3 +1,3 @@
 git add .
-git commit -m "push"
+git commit -m "Add LICENSE"
 git push -u origin main
