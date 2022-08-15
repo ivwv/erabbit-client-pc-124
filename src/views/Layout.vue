@@ -1,7 +1,21 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div></div>
+  <!-- 顶部通栏 -->
+  <nav>顶部通栏</nav>
+  <!-- 头部组件 -->
+  <header>头部组件</header>
+  <!-- 内容容器 -->
+  <div class="main">
+    <!-- 二级路由 -->
+    <router-view></router-view>
+  </div>
+  <!-- 底部组件 -->
+  <footer>底部组件</footer>
 </template>
-<script></script>
+<script>
+export default {
+  name: 'Layout',
+  setup() {},
+}
+</script>
 
 <style lang="less" scoped></style>
