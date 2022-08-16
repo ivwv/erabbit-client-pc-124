@@ -27,6 +27,7 @@
   </nav>
 </template>
 <script>
+import { computed } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -34,7 +35,10 @@ export default {
   setup() {
     //  获取用户登录的信息才能控制导航菜单
     const store = useStore()
-    const { profile } = store.state.user
+    // 使用vuex中的状态需要设置计算属性
+    const profile = computed(() => {
+      return store.state.user.profile
+    })
     return { profile }
   },
 }
