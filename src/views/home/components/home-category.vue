@@ -247,6 +247,7 @@ export default {
     opacity: 1;
   }
 }
+// 骨架动画
 .xtx-skeleton {
   animation: fade 1s linear infinite alternate;
 }
